@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Энвер Белялов](https://up.htmlacademy.ru/htmlcss/39/user/963049).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
 
 ---
 

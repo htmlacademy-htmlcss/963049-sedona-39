@@ -2,7 +2,7 @@
 
 * Студент: [Энвер Белялов](https://up.htmlacademy.ru/htmlcss/39/user/963049).
 * Наставник: [Дмитрий Осадченко](https://htmlacademy.ru/profile/dimaos).
-
+* Сайт: [Мой проект Седона](https://enver-b.github.io/963049-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

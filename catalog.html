@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Проект Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="catalog-page-header header" data-test="header">
@@ -34,9 +36,7 @@
             </a>
           </li>
           <li class="navigation-list__item">
-            <a class="navigation-list__button button" href="#">
-              Хочу сюда
-            </a>
+            <a class="navigation-list__button button" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -153,7 +153,7 @@
             <a class="card-details" href="#">Подробнее</a>
             <button class="card-button button" type="submit">в избранное</button>
             <div class="card-star-rating">
-              <span class="visually-hidden">Рейтинг звезд</span>
+              <span class="visually-hidden">Рейтинг 4 звезды</span>
             </div>
             <p class="card-rating">Рейтинг: 8,5</p>
           </li>
@@ -167,9 +167,9 @@
             <span class="card-text">Гостиница</span>
             <span class="card-price">От 5000 ₽</span>
             <a class="card-details" href="#">Подробнее</a>
-            <button class="card-button button" type="submit">в избранное</button>
+            <button class="card-button button card-button-selected" type="submit">в избранном</button>
             <div class="card-star-rating">
-              <span class="visually-hidden">Рейтинг звезд</span>
+              <span class="visually-hidden">Рейтинг 4 звезды</span>
             </div>
             <p class="card-rating">Рейтинг: 9,2</p>
           </li>
@@ -185,7 +185,7 @@
             <a class="card-details" href="#">Подробнее</a>
             <button class="card-button button" type="submit">в избранное</button>
             <div class="card-star-rating">
-              <span class="visually-hidden">Рейтинг звезд</span>
+              <span class="visually-hidden">Рейтинг 3 звезды</span>
             </div>
             <p class="card-rating">Рейтинг: 6,9</p>
           </li>
@@ -201,7 +201,7 @@
             <a class="card-details" href="#">Подробнее</a>
             <button class="card-button button" type="submit">в избранное</button>
             <div class="card-star-rating">
-              <span class="visually-hidden">Рейтинг звезд</span>
+              <span class="visually-hidden">Рейтинг 2 звезды</span>
             </div>
             <p class="card-rating">Рейтинг: 5,0</p>
           </li>
@@ -209,7 +209,7 @@
 
         <ul class="cards-pagination pagination">
           <li class="pagination-item">
-            <a class="pagination-link current-page">1</a>
+            <a class="pagination-link pagination-link-active">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link">2</a>
@@ -267,7 +267,6 @@
         </li>
         <li class="footer-list__item footer-logo">
           <a class="footer-logo__link" href="https://htmlacademy.ru/">
-            <img class="footer-logo__image" src="images/logo/logo_htmlacademy_footer.svg"  width="115" height="33" alt="Логотип HTML Academy">
             <span class="visually-hidden">Логотип HTML Academy</span>
           </a>
         </li>

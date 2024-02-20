@@ -13,18 +13,28 @@
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* Pages */
 
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+}
+
+.main-container {
+  min-width: 1200px;
+  margin: 0 auto;
+  margin-right: 40px;
+  margin-left: 40px;
+  box-shadow: 0 0 15px 0 #00000033;
 }
 
 .visually-hidden {
@@ -45,6 +55,7 @@ body {
 .header {
   margin: 0 auto;
   padding: 14px 70px;
+  background-color: #ffffff;
 }
 
 .logo-nav__image {
@@ -88,13 +99,19 @@ body {
   border-radius: 4px;
 }
 
+/* Main */
+
+.main-page {
+  background-color: #ffffff;
+}
+
 /* Hero */
 
-.main-page__hero {
-  display: block;
-  width: 1200px;
-  min-height: 285px;
+.hero-image-wrap {
   background-image: url("../images/main/hero-background.jpg");
+  position: bottom;
+  background-color: #7DB54F;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -312,11 +329,13 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/main/subscribe-background.jpg");
+  background-color: #7DB54F;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .catalog-subscribe {
+  background-color: #ffffff;
   background-image: none;
 }
 
@@ -331,9 +350,17 @@ body {
   color: #ffffff;
 }
 
+.subscribe__title-catalog {
+  color: #000000;
+}
+
 .subscribe__text {
   margin-bottom: 54px;
   color: #ffffff;
+}
+
+.subscribe__text-catalog {
+  color: #333333;
 }
 
 .subscribe__form {
@@ -374,6 +401,7 @@ body {
 .footer {
   margin: 0 auto;
   padding: 40px 70px 30px 70px;
+  background-color: #ffffff;
 }
 
 .footer-list {
@@ -401,16 +429,20 @@ body {
 
 /* Catalog */
 
+.catalog-page {
+  background-color: #ffffff;
+}
+
 .catalog-form-wrap {
   display: block;
-  width: 1200px;
-  min-height: 412px;
+  max-height: 412px;
   margin: 0;
   margin-bottom: 50px;
   padding: 0;
   background-image: url("../images/catalog/filter-background.jpg");
+  background-color: #7DB54F;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* Catalog-header*/
@@ -418,7 +450,7 @@ body {
 .catalog-header {
   margin: 0;
   margin-bottom: 40px;
-  padding: 35px 70px 0 70px ;
+  padding: 35px 70px 0 70px;
 }
 
 .catalog-header__title {

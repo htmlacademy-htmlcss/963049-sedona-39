@@ -149,6 +149,30 @@ body {
   margin-left: 8px;
 }
 
+.user-list__link-heart {
+  position: relative
+}
+
+.user-list__link-heart::after {
+  position: absolute;
+  content: '12';
+  top: -14px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-family: PT Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
+}
+
 .user-list__button {
   padding: 8px 34px;
   font-size: 16px;
@@ -641,7 +665,7 @@ body {
 }
 
 .control-text {
-  width: 143px;
+  width: 103px;
   margin: 0;
   padding: 12px 20px 12px 20px;
   font-size: 18px;
@@ -666,9 +690,14 @@ body {
   border-radius:  0 4px 4px 0;
 }
 
+.control-range {
+  width: 288px;
+}
+
 .catalog-filter-button-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .catalog-filter-button {

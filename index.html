@@ -106,26 +106,17 @@
               <p class="services-text">Опытный персонал и качественное обслуживание!</p>
             </div>
             <ul class="services-list">
-              <li class="services-list__item advantage">
-                <div class="advantage-image advantage-image-housing">
-                  <span class="visually-hidden">Иконка дом</span>
-                </div>
+              <li class="services-list__item advantage advantage-house">
                 <h3 class="advantage-title">Жильё</h3>
                 <p class="advantage-text">Рекомендуем пожить<br> в настоящем мотеле,<br>
                   всё как в кино!</p>
               </li>
-              <li class="services-list__item advantage">
-                <div class="advantage-image advantage-image-food">
-                  <span class="visually-hidden">Иконка еда</span>
-                </div>
+              <li class="services-list__item advantage advantage-food">
                 <h3 class="advantage-title">Еда</h3>
                 <p class="advantage-text">Всегда заказывайте<br>
                   топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="services-list__item advantage">
-                <div class="advantage-image advantage-image-gifts">
-                  <span class="visually-hidden">Иконка сувениры</span>
-                </div>
+              <li class="services-list__item advantage advantage-gifts">
                 <h3 class="advantage-title">Сувениры</h3>
                 <p class="advantage-text">Не только китайского,<br>
                   но и настоящего местного производства!</p>
@@ -207,39 +198,54 @@
       </footer>
     </div>
 
-    <div class="search-form-wrap modal-conteiner">
-      <form class="search-form">
-        <h2 class="search-form__title">Поиск гостиницы в Седоне</h2>
-        <button class="search-form__button-close" type="button" aria-label="Закрыть"></button>
-        <div class="search-form__label-wrap label-wrap">
-          <label class="search-form__label label-check-in" for="check-in">Дата заезда:</label>
-          <input class="search-form__input input-check-in-date" type="text" name="date" id="check-in" value="27 апреля 2020">
-        </div>
-        <p class="search-form__comment-error">Мы не можем отправить вас в прошлое.</p>
-        <div class="search-form__label-wrap label-wrap">
-          <label class="search-form__label label-departure" for="departure">Дата выезда:</label>
-          <input class="search-form__input input-departure-date" type="text"  name="date" id="departure" value="1 сентября 2023">
-        </div>
-        <p class="search-form__comment-correct">На эти даты есть свободные номера. Пока есть.</p>
-        <div class="search-form__label-visitors">
-          <div class="search-form__label-wrap label-visitors-wrap">
-            <label class="search-form__label label-adults" for="adults">Взрослые:</label>
-            <input class="search-form__input input-adults" type="text" id="adults" value="2">
-            <span class="search-form__icon-minus"></span>
-            <span class="search-form__icon-plus"></span>
+    <div class="modal-conteiner is-open">
+      <div class="search-form-wrap ">
+        <form class="search-form">
+          <h2 class="search-form__title">Поиск гостиницы в Седоне</h2>
+          <button class="search-form__button-close" type="button" aria-label="Закрыть"></button>
+          <div class="search-form__label-wrap label-wrap">
+            <label class="search-form__label label-check-in" for="check-in">Дата заезда:</label>
+            <input class="search-form__input input-check-in-date" type="text" name="date" id="check-in" value="27 апреля 2020">
           </div>
-          <div class="search-form__label-wrap label-visitors-wrap">
-            <label class="search-form__label label-kids" for="kids">Дети:
-              <span class="label-kids-icon"></span>
-              <p class="label-kids-tooltip"><span class="label-kids-icon-triangle"></span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.</p>
-            </label>
-            <input class="search-form__input input-kids" type="text" id="kids" value="2">
-            <span class="search-form__icon-minus"></span>
-            <span class="search-form__icon-plus"></span>
+          <p class="search-form__comment-error">Мы не можем отправить вас в прошлое.</p>
+          <div class="search-form__label-wrap label-wrap">
+            <label class="search-form__label label-departure" for="departure">Дата выезда:</label>
+            <input class="search-form__input input-departure-date" type="text"  name="date" id="departure" value="1 сентября 2023">
           </div>
-        </div>
-        <button class="search-form__button button">Найти</button>
-      </form>
+          <p class="search-form__comment-correct">На эти даты есть свободные номера. Пока есть.</p>
+          <div class="search-form__label-visitors">
+            <div class="search-form__label-wrap label-visitors-wrap">
+              <label class="search-form__label label-adults" for="adults">Взрослые:
+              </label>
+              <div class="search-form__input-wrap">
+                <button class="search-form__button-minus" type="button">
+                  <span class="visually-hidden">Знак "минус"</span>
+                </button>
+                <input class="search-form__input input-adults" type="text" id="adults" value="2">
+                <button class="search-form__button-plus" type="button">
+                  <span class="visually-hidden">Знак "плюс"</span>
+                </button>
+              </div>
+            </div>
+            <div class="search-form__label-wrap label-visitors-wrap">
+              <label class="search-form__label label-kids" for="kids">Дети:
+                <span class="label-kids-icon"></span>
+                <p class="label-kids-tooltip" role="tooltip" id="tooltip-label-date"><span class="label-kids-icon-triangle"></span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.</p>
+              </label>
+              <div class="search-form__input-wrap">
+                <button class="search-form__button-minus" type="button">
+                  <span class="visually-hidden">Знак "минус"</span>
+                </button>
+                <input class="search-form__input input-kids" type="text" id="kids" value="2">
+                <button class="search-form__button-plus" type="button">
+                  <span class="visually-hidden">Знак "плюс"</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="search-form__button button" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
 
 

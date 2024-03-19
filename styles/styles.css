@@ -52,7 +52,7 @@ body {
 }
 
 .button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .visually-hidden {
@@ -209,7 +209,7 @@ body {
   align-items: center;
   width: 20px;
   height: 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -997,7 +997,7 @@ body {
   width: 256px;
   margin: 0;
   padding: 21px 19px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -1749,7 +1749,7 @@ body {
   display: block;
   margin: 0;
   padding: 8px 10px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;

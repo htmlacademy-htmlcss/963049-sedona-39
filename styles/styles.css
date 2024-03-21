@@ -1273,6 +1273,7 @@ body {
 .control-label {
   position: relative;
   display: block;
+  max-width: 150px;
   margin: 0;
   padding-left: 36px;
   font-size: 18px;
@@ -1294,8 +1295,7 @@ body {
 }
 
 .control-label:hover .control-mark {
-  background-color: #c5d8e7;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  opacity: 0.6;
 }
 
 .control-label:focus-visible .control-mark {
@@ -1303,8 +1303,7 @@ body {
 }
 
 .control-label:active .control-mark {
-  background-color: #a0bbd5;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
 }
 
 .control-label-text {
@@ -1312,11 +1311,11 @@ body {
 }
 
 .control-label:hover .control-label-text {
-  color: #cadbe9;
+  opacity: 0.6;
 }
 
 .control-label:active .control-label-text {
-  color: #9ebad3;
+  opacity: 0.3;
 }
 
 .control-checkbox:disabled ~ .control-label-text,
@@ -1374,7 +1373,7 @@ body {
 }
 
 .control-radio[type="radio"]:checked:active + .control-mark::before {
-  background-color: #698bab;
+  opacity: 0.3;
 }
 
 .control-radio:disabled ~ .control-label-text,

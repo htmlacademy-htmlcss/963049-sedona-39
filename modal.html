@@ -148,7 +148,7 @@
             <p class="subscribe__text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscribe-email">Укажите Ваш e-mail</label>
-              <input class="subscribe__email-adress" id="subscribe-email" type="text" name="email-adress" placeholder="Ваш e-mail">
+              <input class="subscribe__email-adress" id="subscribe-email" type="text" name="email-adress" placeholder="Ваш e-mail" required>
               <button class="subscribe__button button" type="submit" >Подписаться</button>
             </form>
           </div>
@@ -214,12 +214,12 @@
           <button class="search-form__button-close" type="button" aria-label="Закрыть"></button>
           <div class="search-form__label-wrap label-wrap">
             <label class="search-form__label label-check-in" for="check-in">Дата Заезда:</label>
-            <input class="search-form__input input-check-in-date" type="text" name="date" id="check-in" value="27 апреля 2020" placeholder="Укажите дату">
+            <input class="search-form__input input-check-in-date" type="text" name="date" id="check-in" value="27 апреля 2020" placeholder="Укажите дату" required>
           </div>
           <p class="search-form__comment-error">Мы не можем отправить вас в прошлое.</p>
           <div class="search-form__label-wrap label-wrap">
             <label class="search-form__label label-departure" for="departure">Дата Выезда:</label>
-            <input class="search-form__input input-departure-date" type="text"  name="date" id="departure" value="1 сентября 2023" placeholder="Укажите дату">
+            <input class="search-form__input input-departure-date" type="text"  name="date" id="departure" value="1 сентября 2023" placeholder="Укажите дату" required>
           </div>
           <p class="search-form__comment-correct">На эти даты есть свободные номера. Пока есть.</p>
           <div class="search-form__label-visitors">
@@ -230,7 +230,7 @@
                 <button class="search-form__button-minus" type="button">
                   <span class="visually-hidden">Знак "минус"</span>
                 </button>
-                <input class="search-form__input input-adults" type="text" id="adults" value="2">
+                <input class="search-form__input input-adults" type="text" id="adults" value="2" required>
                 <button class="search-form__button-plus" type="button">
                   <span class="visually-hidden">Знак "плюс"</span>
                 </button>
